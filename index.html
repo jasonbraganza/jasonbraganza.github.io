@@ -154,6 +154,378 @@
      </td><!-- icon/logo -->
      <td style='white-space: nowrap;'>
        <span class='feed-title'>
+         <a href='https://blog.linuxmint.com'>The Linux Mint Blog</a>
+        (
+         <a href='https://blog.linuxmint.com/?feed=rss2'>Feed</a>
+        )
+       </span>
+     </td><!-- feed title -->
+     
+     <td width='100%'>
+          <!-- note: width is a suggestion; will get smaller to fill space-->
+     </td>
+     
+   </tr>
+  </table>
+</div>
+
+
+<div class='item' style='width: 800px;'>
+
+<table width='100%'>
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>  
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+        <span class='item-title'>
+          <a href='https://blog.linuxmint.com/?p=4030'>Update your computer!</a>
+        </span>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+       <div style='width: 50px; max-width: 50px;'></div>
+    </td><!-- icon/logo; dummy for space -->
+    <td width='100%'>
+
+<div class='item-body'>
+
+<div class='item-snippet'>
+<!-- use 'smarter' algorithm for cutoff snippet text
+   note: summary goes first; than try content -->
+
+  TLDR Security updates are very important Stats tell us they&#8217;re not being applied by all users Apply updates right now! Don&#8217;t run an EOL version of Linux Mint Security updates Updating is important Security updates patch vulnerabilities in your computer. They protect you from local attacks
+
+</div>
+
+<div class='item-content item-summary'>
+<!-- todo: use sanitize or simplify or whitelist
+   - todo/fix: check why summary can be nil/null
+   note: content goes first; than try summary
+ -->
+
+  TLDR
+
+
+
+<ul><li>Security updates are very important</li><li>Stats tell us they&#8217;re not being applied by all users </li><li>Apply updates right now!</li><li>Don&#8217;t run an EOL version of Linux Mint</li></ul>
+
+
+
+Security updates
+
+
+
+<p>Updating is important</p>
+
+
+
+<p>Security updates patch vulnerabilities in your computer. They protect you from local attacks (people with physical access to your computer and people who have an account on it) but also remote ones (attackers targeting your computer through your Internet connection).</p>
+
+
+
+<p>Other than directed attacks security updates also protect you from malicious software. When you ask your computer to execute external content (software you downloaded, email attachments, a link you click or even just a webpage you visit in your Web browser) you also take the risk to open a door into your computer and invite attackers in.</p>
+
+
+
+<p>When a vulnerability is found developers fix it as soon as possible and distributions ship it as an update so you can apply it in a timely fashion. These vulnerabilities then become public and known by potential attackers. This means an outdated system isn&#8217;t just vulnerable, it is known to be vulnerable.</p>
+
+
+
+<p>Let&#8217;s have a look at the list of known vulnerabilities in Firefox:</p>
+
+
+
+<p>www.mozilla.org/en-US/security/known-vulnerabilities/firefox</p>
+
+
+
+<p>If you&#8217;re not running the latest version, check which version of Firefox you&#8217;re using and count the number of critical (red) patches you&#8217;re missing. </p>
+
+
+
+<p>Updating is easy</p>
+
+
+
+<p>Linux Mint comes with one of the best update managers available. It&#8217;s very easy to use, it&#8217;s configurable and it shows a lot of information.</p>
+
+
+
+♦
+
+
+
+<p>It handles security updates for all your software. All you need to do is use it.</p>
+
+
+
+<p>Updating is safe</p>
+
+
+
+<p>Linux Mint ships with Timeshift to provide integrated system snapshots. With a click of a button you can revert your computer to your previous snapshot and negate the effect of any potential regression.</p>
+
+
+
+♦
+
+
+
+<p>Thanks to Timeshift you can configure your computer to perform automated snapshots and thus safely configure your Update Manager also to perform automated updates.</p>
+
+
+
+<p>After it was introduced in Linux Mint 18.3, Timeshift was backported to previous Linux Mint releases. It&#8217;s available in all modern versions of Linux Mint, including EOL ones.</p>
+
+
+
+Statistics
+
+
+
+<p>Statistics are not precise but they do tell us something </p>
+
+
+
+<p>Before I give statistics, take the numbers in this blog post with a pinch of salt.</p>
+
+
+
+<p>We can&#8217;t measure anything with precision because there&#8217;s nothing in your computer which sends data to us and we don&#8217;t configure Linux Mint in a way that even allows us to count how many users we have. In other words, there is nothing in Linux Mint that is common to all users and that we could rely on to establish statistics.</p>
+
+
+
+<p>That being said,  we do have a few metrics we can measure. They give us stats which only tell one particular aspect of the story and they are unreliable and imprecise but do tell us something nonetheless. </p>
+
+
+
+<p>About 30% of users apply updates in less than a week</p>
+
+
+
+<p>After we updated Firefox 85.0 we asked Yahoo to give us a breakdown of the Linux Mint traffic per user agent. These stats only covered users which use Yahoo of course but they did show us how fast the update was applied.</p>
+
+
+
+<p>We were able to observe the fact that only 30% of users updated their web browser in less than a week.</p>
+
+
+
+<p>These statistics also show us users of recent Linux Mint releases which do not apply updates at all. For instance, a part of that traffic uses Firefox 77 (the version which shipped with Linux Mint 20).</p>
+
+
+
+<p>Between 5% and 30% of users run Linux Mint 17.x</p>
+
+
+
+<p>These stats come from two distinct sources, both highly unreliable.. as you can see there&#8217;s quite a gap between 5 and 30, but they both tell us the same story.</p>
+
+
+
+<p>0% of users should run Linux Mint 17.x! Anything above is not good, whether it&#8217;s 5% or 30%.</p>
+
+
+
+<p>Linux Mint 17.x reached EOL (End-Of-Life) in April 2019. In other words it stopped receiving security updates for almost 2 years now!</p>
+
+
+
+<p>The 5% figure comes from your default browser start page. The longer you use Linux Mint after you installed it the more likely you are to have changed your first page, so we can reasonably assume the number is lower than reality.</p>
+
+
+
+<p>The 30% figure comes from our APT repositories. It&#8217;s the traffic percentage we get from Linux Mint 17.x. It&#8217;s unreliable because APT got better at performing less HTTP requests for the same queries and we lowered the default cache update frequency in modern releases. It&#8217;s unreliable also because we&#8217;ve started and became better release after release at recommending the use of local mirrors, so there is naturally a higher proportion of users not using mirrors in older releases. We can reasonably assume the number is higher than reality.</p>
+
+
+
+<p>Again, it really doesn&#8217;t matter to us if the real number is 10% or 15%. It needs to be 0%. We have mechanisms in place to tell users when a new release becomes available now, but we didn&#8217;t have them at the time of Linux Mint 17.x.</p>
+
+
+
+Apply updates right now!
+
+
+
+<p>Check your version of Linux Mint</p>
+
+
+
+<p>Open a terminal and type:</p>
+
+
+
+<pre><code>lsb_release -r</code></pre>
+
+
+
+<p>Install timeshift</p>
+
+
+
+<p>If your version of Linux Mint is 18.3 or higher, Timeshift is already installed. Otherwise, type the following commands in your terminal to install it:</p>
+
+
+
+<pre><code>apt update
+apt install timeshift</code></pre>
+
+
+
+<p>Create a system snapshot</p>
+
+
+
+<p>Run Timeshift and configure it it it&#8217;s the first time you run it (select the default options if you&#8217;re not sure).</p>
+
+
+
+<p>Press the &#8220;Create&#8221; button to perform a system snapshot.</p>
+
+
+
+<p>If anything goes wrong you&#8217;ll be able to come back thanks to this snapshot.</p>
+
+
+
+<p>Apply all updates</p>
+
+
+
+<p>Run the Update Manager.</p>
+
+
+
+<p>Press the &#8220;Refresh&#8221; button to find available updates.</p>
+
+
+
+<p>If a new version of the Update Manager itself is available, you will need to apply it first.</p>
+
+
+
+<p>Press &#8220;Install Updates&#8221; to update your computer.</p>
+
+
+
+<p>Automate snapshots and updates</p>
+
+
+
+<p>Updates are indicated by a shield icon in your system tray. Unlike other operating systems which rely on frustration and which annoy you at the worst possible time until you perform updates, Linux Mint gives you a visual indication that updates are available but it&#8217;s up to you to decide when to apply them.</p>
+
+
+
+♦
+
+
+
+<p>This setup is empowering and comfortable but it does rely on you to eventually apply the updates. We&#8217;ll need to consider a frustration mechanism if the system is neglected for months but we&#8217;ll touch on that in the next blog post.</p>
+
+
+
+<p>If you don&#8217;t apply updates regularly then you should consider automating the process.</p>
+
+
+
+<p>In the Timeshift configuration screen you can automate system snapshots.</p>
+
+
+
+♦
+
+
+
+<p>Likewise, in the Update Manager configuration screen you can automate the updates.</p>
+
+
+
+♦
+
+
+
+<p>Do this and you no longer need to worry about it.</p>
+
+
+
+Firefox ESR in Linux Mint 17.x
+
+
+
+<p>If you are still using Linux Mint 17.x you need to backup your data and reinstall a modern version ASAP.</p>
+
+
+
+<p>Because Linux Mint 17.x has reached EOL and hasn&#8217;t received any updates for almost 2 years, we decided to send an emergency update to upgrade your Firefox web browser from version 66.0 to version 78 ESR.</p>
+
+
+
+<p>Because it&#8217;s ESR, this update will create a new Firefox profile for you. If you want to get back to your previous profile, close Firefox, open a terminal and type:</p>
+
+
+
+<pre><code>firefox -ProfileManager</code></pre>
+
+
+
+<p>Select the &#8220;default&#8221; profile.</p>
+
+
+
+<p>Do upgrade Firefox right now as it is a very important part of your system, but please be aware that it is not enough. You will need to reinstall Linux Mint as soon as possible. You cannot run something that has unpatched known vulnerabilities for years, it&#8217;s too risky. Think of all these banks and establishments which got hit because they were still running Windows XP. We don&#8217;t want this to be you. After 5 years of support, Linux Mint 17.x is simply not supported anymore. You need to move away from it.</p>
+
+
+
+<p>The latest version of Linux Mint is 20.1. It is supported until April 2025.</p>
+
+
+
+Thank you
+
+
+
+<p>If you know users of Linux Mint which do not read the blog, please spread the word for us, especially if their system is not up to date or if they run an old release. We&#8217;ve no other way of reaching them than via communication here or software updates.</p>
+
+
+
+<p>Thank you all for your attention and consideration.</p>
+
+</div>
+
+<div class='item-footer'>
+  12:12  &bull;
+    <span class='item-time-ago-in-words'>
+       3 hours ago
+    </span>
+</div>
+
+</div><!-- item-body -->
+
+    </td>
+  </tr>
+</table>
+
+</div>  <!-- item -->
+</div> <!-- section -->
+
+
+
+
+<div class='section' style='width: 800px;'>
+
+
+
+<div class='header'>
+  <table width='100%'>
+   <tr>
+     <td>
+        <div style='width: 50px'>{}</div>
+     </td><!-- icon/logo -->
+     <td style='white-space: nowrap;'>
+       <span class='feed-title'>
          <a href='https://janusworx.com'>Janusworx</a>
         (
          <a href='https://janusworx.com/rss.xml'>Feed</a>
@@ -672,7 +1044,7 @@ The right balance between preservation and polish?
 <div class='item-footer'>
   21:12  &bull;
     <span class='item-time-ago-in-words'>
-       17 hours ago
+       18 hours ago
     </span>
 </div>
 
@@ -754,7 +1126,7 @@ The right balance between preservation and polish?
 <div class='item-footer'>
   19:17  &bull;
     <span class='item-time-ago-in-words'>
-       19 hours ago
+       20 hours ago
     </span>
 </div>
 
@@ -958,7 +1330,7 @@ The right balance between preservation and polish?
 <div class='item-footer'>
   17:14  &bull;
     <span class='item-time-ago-in-words'>
-       21 hours ago
+       22 hours ago
     </span>
 </div>
 
@@ -1817,107 +2189,6 @@ Pics or it didn’t happen
   02:33  &bull;
     <span class='item-time-ago-in-words'>
        4 days ago
-    </span>
-</div>
-
-</div><!-- item-body -->
-
-    </td>
-  </tr>
-</table>
-
-</div>  <!-- item -->
-</div> <!-- section -->
-
-
-
-
-<div class='section' style='width: 800px;'>
-
-
-
-<div class='header'>
-  <table width='100%'>
-   <tr>
-     <td>
-        <div style='width: 50px'>{}</div>
-     </td><!-- icon/logo -->
-     <td style='white-space: nowrap;'>
-       <span class='feed-title'>
-         <a href='https://goinggnu.wordpress.com/'>Shrini Going Gnu</a>
-        (
-         <a href='https://goinggnu.wordpress.com/feed/'>Feed</a>
-        )
-       </span>
-     </td><!-- feed title -->
-     
-     <td width='100%'>
-          <hr class='filler'>
-     </td><!-- filler -->
-      <td style='white-space: nowrap;'>
-       <span class='item-published'>Saturday, 13 February 2021</span>
-      </td><!-- item published -->
-     
-   </tr>
-  </table>
-</div>
-
-
-<div class='item' style='width: 800px;'>
-
-<table width='100%'>
-  <tr>
-    <td>
-       <div style='width: 50px; max-width: 50px;'></div>  
-    </td><!-- icon/logo; dummy for space -->
-    <td width='100%'>
-        <span class='item-title'>
-          <a href='https://goinggnu.wordpress.com/2021/02/13/live-coding-session-today-3-4-pm-on-pytamil-a-python-library-for-tamil/'>Live Coding session Today 3-4 pm on PyTamil – A Python Library for Tamil</a>
-        </span>
-    </td>
-  </tr>
-
-  <tr>
-    <td>
-       <div style='width: 50px; max-width: 50px;'></div>
-    </td><!-- icon/logo; dummy for space -->
-    <td width='100%'>
-
-<div class='item-body'>
-
-<div class='item-snippet'>
-<!-- use 'smarter' algorithm for cutoff snippet text
-   note: summary goes first; than try content -->
-
-  Sriram is a Bengaluru based software engineer. He created a Python library for Tamil Language, just like Open-Tamil Python library. He keeps thinking why should artists have all the fun with creative projects while engineers solve logical problems. Imagine the engineer in you jumping with joy coding 
-
-</div>
-
-<div class='item-content item-summary'>
-<!-- todo: use sanitize or simplify or whitelist
-   - todo/fix: check why summary can be nil/null
-   note: content goes first; than try summary
- -->
-
-  <p>Sriram is a Bengaluru based software engineer. He created a Python library for Tamil Language, just like Open-Tamil Python library.</p>
-<p>He keeps thinking why should artists have all the fun with creative projects while engineers solve logical problems. Imagine the engineer in you jumping with joy coding for a creative collaborative art project. Then welcome to &#8220;Why Artists should have all the fun&#8221; experiments.</p>
-<p>First attempt at this experiment is the intersection of Tamil and programming. One of the projects that he wants to share is pytamil. A computational way to analyse Tamil. There is a live coding session on 13 Feb 2021, Saturday, IST 3-4 pm. If you are interested in Tamil or Computer programming or both , then you might find this interesting.</p>
-<p>Where: www.twitch.tv/neosrix</p>
-<p>Iternirary:<br>
-3.00 &#8211; Intro to Pytamil (பைந்தமிழ்) project<br>
-3.10 &#8211; How to analyse Venba (வெண்பா)<br>
-3.20 &#8211; How to analyse Maathirai (மாத்திரை)<br>
-3.30 &#8211; Design choices . Why Python, ANTLR4 grammar is used<br>
-3.40 &#8211; Q&amp;A<br>
-3.50 &#8211; What&#8217;s next<br>
-4.00 &#8211; Checkout</p>
-
-</div>
-
-<div class='item-footer'>
-  06:38  &bull;
-    <span class='item-time-ago-in-words'>
-       7 days ago
     </span>
 </div>
 
